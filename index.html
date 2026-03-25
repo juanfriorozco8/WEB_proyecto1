@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlogBoard | Proyecto 1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Literata:opsz,wght@7..72,400;7..72,600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+  <div class="ambient-shape ambient-shape-left" aria-hidden="true"></div>
+  <div class="ambient-shape ambient-shape-right" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-shell">
+      <a class="brand" href="#/home">BlogBoard</a>
+      <p class="brand-subtitle">Proyecto 1 · Sistemas y Tecnologías Web</p>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a class="nav-link" data-route="home" href="#/home">Inicio</a>
+        <a class="nav-link" data-route="post" href="#/post/1">Detalle</a>
+        <a class="nav-link" data-route="create" href="#/create">Crear publicación</a>
+        <a class="nav-link" data-route="authors" href="#/authors">Autores</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="app" class="app-shell" aria-live="polite"></section>
+  </main>
+
+  <section id="toast-root" class="toast-root" aria-live="assertive" aria-atomic="true"></section>
+
+  <script type="module" src="./js/app/main.js"></script>
+</body>
+</html>
