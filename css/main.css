@@ -1,0 +1,47 @@
+@import url("./components.css");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&display=swap");
+
+:root {
+  --bg:          #f9f5ef;
+  --bg-soft:     #f0e8dc;
+  --surface:     #fffdf9;
+  --surface-alt: #fdf7ef;
+  --text:        #2c1f10;
+  --muted:       #7a6248;
+  --primary:     #6b4c2a;
+  --primary-dark:#4e3318;
+  --accent:      #b87333;
+  --success:     #3d5e38;
+  --error:       #993333;
+  --warning:     #7a5518;
+  --border:      #e0d0be;
+  --border-soft: #ede3d6;
+  --shadow:      0 4px 24px rgba(44, 32, 22, 0.07);
+  --shadow-sm:   0 2px 8px rgba(44, 32, 22, 0.05);
+  --radius-lg:   16px;
+  --radius-md:   10px;
+  --radius-sm:   7px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  background-image:
+    radial-gradient(ellipse at 0% 0%, rgba(196,136,74,0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 100%, rgba(124,92,58,0.06) 0%, transparent 50%);
+  color: var(--text);
+  font-family: "DM Sans", "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+
