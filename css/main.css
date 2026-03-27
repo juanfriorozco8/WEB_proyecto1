@@ -45,3 +45,70 @@ h1, h2, h3, h4 {
 }
 
 
+/* ── Header ── */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(255,252,246,0.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(107,76,42,0.07);
+}
+
+.header-shell {
+  padding: 1rem 0 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.brand {
+  color: var(--primary);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.65rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.brand-subtitle {
+  margin: 0.15rem 0 0.85rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.nav-link {
+  padding: 0.48rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 500;
+  background: transparent;
+  transition: background 150ms ease, color 150ms ease, border-color 150ms ease;
+  letter-spacing: 0.01em;
+}
+
+.nav-link:hover {
+  background: var(--bg-soft);
+  color: var(--primary);
+  border-color: var(--accent);
+}
+
+.nav-link.active {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
