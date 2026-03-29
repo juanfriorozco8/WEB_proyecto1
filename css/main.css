@@ -180,3 +180,29 @@ h1, h2, h3, h4 {
 
 .stack { display: grid; gap: 1rem; }
 .hidden { display: none !important; }
+
+/* ── Toast ── */
+.toast-root {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  display: grid;
+  gap: 0.5rem;
+  z-index: 50;
+}
+
+.toast {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--primary);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  padding: 0.7rem 1rem;
+  max-width: 300px;
+  font-size: 0.88rem;
+  color: var(--text);
+}
+
+.toast-success { border-left-color: var(--success); }
+.toast-error   { border-left-color: var(--error); }
+
