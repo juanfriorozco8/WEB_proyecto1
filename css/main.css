@@ -206,3 +206,66 @@ h1, h2, h3, h4 {
 .toast-success { border-left-color: var(--success); }
 .toast-error   { border-left-color: var(--error); }
 
+
+/* ── Vistas ── */
+.home-view   { gap: 1rem; }
+.create-view { align-items: start; }
+.extra-view  { gap: 1.25rem; }
+
+.detail-card { max-width: 860px; }
+
+.detail-top {
+  border-bottom: 1px solid var(--border-soft);
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.detail-title {
+  margin: 0;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.detail-meta,
+.detail-stats {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 300;
+}
+
+.detail-body {
+  margin: 0;
+  line-height: 1.8;
+  color: var(--text);
+  white-space: pre-wrap;
+  font-size: 1rem;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-soft);
+}
+
+/* ── Divider decorativo ── */
+.view-header::after {
+  display: none;
+}
+
+/* ── Animación ── */
+@keyframes page-appear {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 760px) {
+  .brand { font-size: 1.4rem; }
+  .brand-subtitle { font-size: 0.76rem; }
+  .main-nav { gap: 0.3rem; }
+  .nav-link { font-size: 0.83rem; padding: 0.4rem 0.75rem; }
+}
