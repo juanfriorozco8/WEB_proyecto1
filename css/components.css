@@ -41,3 +41,86 @@
 }
 
 .btn-sm { padding: 0.4rem 0.75rem; font-size: 0.82rem; }
+
+/* ── Grid de tarjetas ── */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+/* ── Tarjeta de post ── */
+.post-card {
+  background: var(--surface);
+  background-image: linear-gradient(160deg, #fffdf9 0%, #fdf5ea 100%);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem;
+  display: grid;
+  gap: 0.6rem;
+  transition: box-shadow 180ms ease, transform 180ms ease, border-color 180ms ease;
+}
+
+.post-card:hover {
+  box-shadow: 0 8px 32px rgba(107,76,42,0.12);
+  transform: translateY(-2px);
+  border-color: #c9a882;
+}
+
+.post-meta-id {
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.post-title {
+  margin: 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.08rem;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.post-excerpt {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.post-author {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-style: italic;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.post-tags {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.tag-chip {
+  border-radius: 999px;
+  background: #ede0ce;
+  color: var(--primary);
+  font-size: 0.73rem;
+  font-weight: 500;
+  padding: 0.18rem 0.55rem;
+  border: 1px solid #d9c4a8;
+  letter-spacing: 0.02em;
+}
+
+.post-actions {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  padding-top: 0.25rem;
+  border-top: 1px solid var(--border-soft);
+}
