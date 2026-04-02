@@ -124,3 +124,81 @@
   padding-top: 0.25rem;
   border-top: 1px solid var(--border-soft);
 }
+
+/* ── Autores ── */
+.authors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.author-card  { display: grid; gap: 0.45rem; }
+.author-name  { margin: 0; font-size: 1rem; }
+.author-meta  { margin: 0; color: var(--muted); font-size: 0.85rem; font-weight: 300; }
+.author-count {
+  margin: 0.1rem 0 0.3rem;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+
+/* ── Filtros ── */
+.filters-form {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  align-items: end;
+}
+
+.filter-control { display: grid; gap: 0.3rem; }
+
+.filter-control label,
+.form-control label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.filter-control input,
+.filter-control select,
+.form-control input,
+.form-control textarea,
+.form-control select {
+  font-family: "DM Sans", sans-serif;
+  font-size: 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  padding: 0.55rem 0.7rem;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+  outline: none;
+}
+
+.filter-control input:focus,
+.filter-control select:focus,
+.form-control input:focus,
+.form-control textarea:focus,
+.form-control select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(196,136,74,0.12);
+}
+
+.filter-actions { display: flex; gap: 0.5rem; align-items: center; }
+
+/* ── Formulario creación ── */
+.create-form-card { max-width: 720px; }
+.create-form { display: grid; gap: 1rem; }
+.form-control { display: grid; gap: 0.3rem; }
+.form-control textarea { resize: vertical; min-height: 160px; line-height: 1.6; }
+.form-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; padding-top: 0.5rem; }
+.form-error {
+  min-height: 1rem;
+  margin: 0;
+  color: var(--error);
+  font-size: 0.8rem;
+  font-style: italic;
+}
