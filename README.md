@@ -82,6 +82,9 @@ blogboard/
    - VS Code: click derecho en `index.html` → Open with Live Server
 4. Abrir `http://localhost:8080` en el navegador
 
+## Evidencia en video:
+Link de video de youtube: https://youtu.be/wctg_kangWw
+
 
 ## Notas
 - DummyJSON simula escritura, por eso la eliminación se maneja localmente en el estado
